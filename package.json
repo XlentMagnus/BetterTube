@@ -1,0 +1,25 @@
+{
+  "name": "BetterTube",
+  "version": "1.0.0",
+  "description": "Lyssna utan att ha webbrowsers fönster öppet",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "se.mangwie.radioplay",
+    "mac": {
+      "category": "public.app-category.music",
+      "target": "dmg",
+      "icon": "1.icns"
+    },
+    "files": [
+      "**/*"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^28.1.0",
+    "electron-builder": "^24.6.0"
+  }
+}
